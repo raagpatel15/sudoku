@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 
 class SudokuGame {
-	//Neelay Ranjan
     private static int[][] board = new int[9][9];
     private static int hintCounter;
 
@@ -114,7 +113,7 @@ class SudokuGame {
        scanner.close();
    }
 
-   // Nicholas
+
    // Display the Sudoku Board
    public static void displayBoard() {
        System.out.println("\n\n\nCurrent Sudoku Board:");
@@ -139,7 +138,7 @@ class SudokuGame {
        }
    }
 
-   // Raag Patel
+ 
    // for loop to fill the board
    public static void generateBoard() {
        Random random = new Random();
@@ -174,7 +173,7 @@ class SudokuGame {
        }
    }
 
-   // Neelay Ranjan
+
    // Remove numbers to create the puzzle
    public static void removeNumbers(int count) {
        Random random = new Random();
@@ -188,7 +187,7 @@ class SudokuGame {
        }
    }
 
-   // Liam
+
    // Check if a move is valid
    public static boolean isValidMove(int row, int col, int num) {
        // Check if the number already exists in the row
@@ -215,7 +214,7 @@ class SudokuGame {
        return true;
    }
 
-   // Liam
+   
    // Check if the board is complete
    public static boolean isBoardComplete() {
        for (int row = 0; row < 9; row++) {
@@ -228,7 +227,7 @@ class SudokuGame {
        return true;
    }
    
-   //Neelay Ranjan
+  
    // Check if the board is complete
    public static void fillHints(int row, int col) {
        Random random = new Random();
@@ -247,7 +246,7 @@ class SudokuGame {
        throw new IllegalStateException("Failed to fill cell, this board has NO valid solution, exiting.");
    }
    
-   // Nicholas
+  
    public static List<Integer> getPossibleValues(int row, int col) {
        List<Integer> candidates = new ArrayList<>();
        if (board[row][col] != 0) {
